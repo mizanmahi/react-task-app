@@ -8,7 +8,7 @@ const Task = () => {
    console.log("state is : ", state);
    return (
       <ul className="task">
-         {state.tasks.map((task, i) => {
+         {state.modifiedTask.map((task, i) => {
             return (
                <li
                   key={i}

@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import Tasks from "./components/tasks";
 import { taskReducer } from "../src/context/taskReducer";
+import AddTask from "./components/addTask";
 import "./App.css";
 
 export const taskContext = React.createContext();
@@ -13,7 +14,7 @@ const INITIAL_STATE = {
          completed: false,
       },
       {
-         title: "Take a poer nap",
+         title: "Take a power nap",
          isActive: true,
          completed: false,
       },
@@ -28,6 +29,8 @@ const INITIAL_STATE = {
          completed: false,
       },
    ],
+   modifiedTask: ""
+
 };
 
 function App() {
@@ -36,6 +39,12 @@ function App() {
    return (
       <taskContext.Provider value={{ state, dispatch }}>
          <div className="App">
+            <div className="top"></div>
+            <div className="bottom"></div>
+            <AddTask />
+
+            <h1 className="all-task">Task!</h1>
+
             <Tasks />
          </div>
       </taskContext.Provider>
