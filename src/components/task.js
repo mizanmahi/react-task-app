@@ -6,9 +6,10 @@ import TaskDetails from "./taskdetails";
 const Task = () => {
    const { state, dispatch } = useContext(taskContext);
    console.log("state is : ", state);
+   const modifiedTask = state.modifiedTask ? state.modifiedTask : state.tasks;
    return (
       <ul className="task">
-         {state.modifiedTask.map((task, i) => {
+         {modifiedTask.map((task, i) => {
             return (
                <li
                   key={i}
