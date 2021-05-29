@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mizanmahi/react-task-app/static/css/main.936eeb7d.chunk.css",
+    "main.js": "/mizanmahi/react-task-app/static/js/main.569c76a8.chunk.js",
+    "main.js.map": "/mizanmahi/react-task-app/static/js/main.569c76a8.chunk.js.map",
+    "runtime-main.js": "/mizanmahi/react-task-app/static/js/runtime-main.74cd01c0.js",
+    "runtime-main.js.map": "/mizanmahi/react-task-app/static/js/runtime-main.74cd01c0.js.map",
+    "static/js/2.735200ed.chunk.js": "/mizanmahi/react-task-app/static/js/2.735200ed.chunk.js",
+    "static/js/2.735200ed.chunk.js.map": "/mizanmahi/react-task-app/static/js/2.735200ed.chunk.js.map",
+    "static/js/3.8882dab1.chunk.js": "/mizanmahi/react-task-app/static/js/3.8882dab1.chunk.js",
+    "static/js/3.8882dab1.chunk.js.map": "/mizanmahi/react-task-app/static/js/3.8882dab1.chunk.js.map",
+    "index.html": "/mizanmahi/react-task-app/index.html",
+    "static/css/main.936eeb7d.chunk.css.map": "/mizanmahi/react-task-app/static/css/main.936eeb7d.chunk.css.map",
+    "static/js/2.735200ed.chunk.js.LICENSE.txt": "/mizanmahi/react-task-app/static/js/2.735200ed.chunk.js.LICENSE.txt",
+    "static/media/delete-itcon.1904aa85.svg": "/mizanmahi/react-task-app/static/media/delete-itcon.1904aa85.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74cd01c0.js",
+    "static/js/2.735200ed.chunk.js",
+    "static/css/main.936eeb7d.chunk.css",
+    "static/js/main.569c76a8.chunk.js"
+  ]
+}
