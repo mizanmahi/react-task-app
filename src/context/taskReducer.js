@@ -3,7 +3,7 @@ export const taskReducer = (state, action) => {
       case "TOOGLE_ACTIVE":
          return {
             tasks: state.tasks.map((task, i) =>
-               action.payload === i
+               action.payload === task.id
                   ? {
                        ...task,
                        isActive: !task.isActive,
@@ -15,7 +15,8 @@ export const taskReducer = (state, action) => {
          };
       case "DELETE_TASK":
          return {
-            tasks: state.tasks.filter((task, i) => action.payload !== i),
+            tasks: state.tasks.filter((task, i) => action.payload !== task.id),
+            modifiedTask: state.modifiedTask ? state.modifiedTask.filter((task, i) => action.payload !== task.id) : ""
          };
       case "SHOW_ALL":
          return {

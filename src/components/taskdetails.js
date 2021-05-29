@@ -4,7 +4,6 @@ import { taskContext } from "../App";
 const TaskDetails = () => {
    const { state, dispatch } = useContext(taskContext);
    const [currState, setCurrState] = useState(null);
-   console.log(currState);
    return (
       <div className="details">
          <li>

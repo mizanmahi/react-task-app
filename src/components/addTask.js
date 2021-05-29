@@ -13,7 +13,8 @@ const AddTask = () => {
        const newTask = {
            title,
            isActive: true,
-           completed: false
+           completed: false,
+           id: Math.floor(Math.random() * (1000 - 1 + 1) ) + 1
        }
        dispatch({type: "ADD_TODO", payload: newTask})
        setTitle("")

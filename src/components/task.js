@@ -7,6 +7,7 @@ const Task = () => {
    const { state, dispatch } = useContext(taskContext);
    console.log("state is : ", state);
    const modifiedTask = state.modifiedTask ? state.modifiedTask : state.tasks;
+   console.log(modifiedTask);
    return (
       <ul className="task">
          {modifiedTask.map((task, i) => {
@@ -14,7 +15,7 @@ const Task = () => {
                <li
                   key={i}
                   onClick={() =>
-                     dispatch({ type: "TOOGLE_ACTIVE", payload: i })
+                     dispatch({ type: "TOOGLE_ACTIVE", payload: task.id })
                   }
                   className={`${task.isActive ? "" : "completed"}`}
                >
@@ -25,7 +26,7 @@ const Task = () => {
                      className="delete-icon"
                      onClick={(e) => {
                         e.stopPropagation()
-                        dispatch({type: "DELETE_TASK", payload: i})
+                        dispatch({type: "DELETE_TASK", payload: task.id})
                      }}
                   />
                </li>

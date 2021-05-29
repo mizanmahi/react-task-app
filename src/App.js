@@ -13,21 +13,25 @@ const INITIAL_STATE = {
          title: "Buy some programming books",
          isActive: true,
          completed: false,
+         id: 2569
       },
       {
          title: "Take a power nap",
          isActive: true,
          completed: false,
+         id: 9587
       },
       {
          title: "Exercise 1 hours",
          isActive: true,
          completed: false,
+         id: 5478
       },
       {
          title: "Read quran for 2 hour",
          isActive: true,
          completed: false,
+         id: 9846
       },
    ],
    modifiedTask: ""
