@@ -51,7 +51,8 @@ body {
 }
 
 .tasks {
-   min-width: 50rem;
+   max-width: 50rem;
+   min-width: 40rem;
    padding: 2.5rem;
    margin: 3rem auto;
    background-color: var(--color-desaturated-blue);
@@ -64,7 +65,8 @@ body {
 }
 
 .form {
-   min-width: 50rem;
+   max-width: 50rem;
+   min-width: 40rem;
    padding: 2.5rem;
    top: 20%;
    left: 50%;
@@ -187,3 +189,22 @@ ul li::marker {
    color: #ff2400;
 }
 
+footer {
+   position: absolute;
+   bottom: 2.5rem;
+   right: 2.5rem;
+   color: orchid;
+}
+footer a {
+   display: inline-block;
+   text-decoration: none;
+   color: var(--color-grayish-blue);
+   padding: .5rem .8rem;
+   transition: all .2s;
+}
+
+footer a:hover{
+   background-color: var(--color-desaturated-blue);
+   transform: scale(1.1) rotate(5deg);
+   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+}

@@ -3,6 +3,7 @@ import Tasks from "./components/tasks";
 import { taskReducer } from "../src/context/taskReducer";
 import AddTask from "./components/addTask";
 import "./App.css";
+import Footer from "./components/footer";
 
 export const taskContext = React.createContext();
 
@@ -46,6 +47,7 @@ function App() {
             <h1 className="all-task">Task!</h1>
 
             <Tasks />
+            <Footer/>
          </div>
       </taskContext.Provider>
    );
