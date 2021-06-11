@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+See Live Here: [react-task-app](https://react-task-live.herokuapp.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -37,7 +37,7 @@ The designs were created to the following widths:
 - Dark Grayish Blue: hsl(236, 9%, 61%)
 - Very Dark Grayish Blue: hsl(235, 19%, 35%)
 
-### Dark Theme
+<!-- ### Dark Theme
 
 - Very Dark Blue: hsl(235, 21%, 11%)
 - Very Dark Desaturated Blue: hsl(235, 24%, 19%)
@@ -45,7 +45,7 @@ The designs were created to the following widths:
 - Light Grayish Blue (hover): hsl(236, 33%, 92%)
 - Dark Grayish Blue: hsl(234, 11%, 52%)
 - Very Dark Grayish Blue: hsl(233, 14%, 35%)
-- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%) -->
 
 ## Typography
 
