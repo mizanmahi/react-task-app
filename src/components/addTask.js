@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { taskContext } from "../App";
+import { TaskContext } from "../context/taskContext";
 
 const AddTask = () => {
-   const { dispatch } = useContext(taskContext);
+   const { dispatch } = useContext(TaskContext);
    const [title, setTitle] = useState("");
 
    const submitHandler = (e) => {

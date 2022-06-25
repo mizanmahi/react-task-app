@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { taskContext } from "../App";
+import { TaskContext } from "../context/taskContext";
 
 const TaskDetails = () => {
-   const { state, dispatch } = useContext(taskContext);
+   const { state, dispatch } = useContext(TaskContext);
    const [currState, setCurrState] = useState(null);
    return (
       <div className="details">

@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { taskContext } from "../App";
+import { TaskContext } from "../context/taskContext";
 import deleteIcon from "../delete-itcon.svg";
 import TaskDetails from "./taskdetails";
 
 const Task = () => {
-   const { state, dispatch } = useContext(taskContext);
+   const { state, dispatch } = useContext(TaskContext);
    const modifiedTask = state.modifiedTask ? state.modifiedTask : state.tasks;
    return (
       <ul className="task">
@@ -23,14 +23,14 @@ const Task = () => {
                      alt="delete-icon"
                      className="delete-icon"
                      onClick={(e) => {
-                        e.stopPropagation()
-                        dispatch({type: "DELETE_TASK", payload: task.id})
+                        e.stopPropagation();
+                        dispatch({ type: "DELETE_TASK", payload: task.id });
                      }}
                   />
                </li>
             );
          })}
-         <TaskDetails/>
+         <TaskDetails />
       </ul>
    );
 };
